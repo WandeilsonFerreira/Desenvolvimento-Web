@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  
+  font-family: 'Ubuntu', sans-serif; 
+}
+
+#parellelograma{
+  background: #cc6f1b;
+  width: 500px;
+  height: 720px;
+  max-width: 70vw;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px;
+  transform: skew(6deg,3deg);
+  position: absolute;
+  z-index: -1;  
+   
+}
+
+section{  
+  background:#fff;
+  padding: 30px 5px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px;
+  max-width: 200vw;
+}
+
+section h1{
+  padding: 40px 10px;
+  text-align: center;
+}
+
+fieldset{
+  border: none;
+}
+
+fieldset:nth-child(2){
+  display: flex;
+  padding-top: 10px;
+}
+fieldset:nth-child(3){
+  display: flex;
+  padding-top: 10px;
+}
+
+fieldset:nth-child(4){
+  display: flex;
+  padding-top: 10px;
+}
+
+fieldset:nth-child(5){
+  display: flex;
+  width: 100%;
+
+}
+.container{
+  position: relative;
+  width: 450px;
+}
+
+.container input{
+  margin: 10px 10px;
+  width: calc(100% - 20px);
+  height: 70px;
+  border: none;
+  background-color: #ededed;
+  border-radius: 4px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 14px 10px 0 10px;
+}
+
+.container label{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: #9d9d9d;
+  position: absolute;
+  line-height: 70px;
+  top: 10px;
+  left: 20px;
+  user-select: none; /*Impede a selecação de texto*/
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.container input:focus ~ label,
+.container input:valid ~ label{
+  left: 20px;
+  top: -10px;
+  color: #cc6f1b;
+}
+
+button{
+  margin: 40px 0;
+  margin-left: 10px;
+  width: calc(100% - 20px);
+  height: 50px;
+  background: #cc6f1b;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: 0.85;
+}
+
+#resultado {
+  background: #ededed;
+  width: calc(100% - 20px);
+  height: 70px;
+  margin: 10px;  
+  border-radius: 4px;
+
+}
+img{
+  width: 400px;
+  height: 200px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;  
+}
+

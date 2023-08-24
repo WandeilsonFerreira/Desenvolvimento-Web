@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+  <title>Softex | JavaScrpt | Aivdade 03</title>
+</head>
+<body>
+  <section>
+    <div id="parellelograma"></div>
+    <form action="">
+      <h1>Boletim Escolar</h1>
+      <fieldset>
+        <div class="container">
+          <input type="text" id="nome" required name="nome" autofocus>
+          <label>Nome do aluno</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="container">
+          <input type="number" id="nota01"required name="nota01" autofocus>
+          <label>Digite a primeira nota</label> 
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="container">
+          <input type="number" id="nota02"required name="nota02" autofocus>
+          <label>Digite a segunda nota</label> 
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="container">
+          <input type="number" id="nota03" required name="nota03" autofocus>
+          <label>Digite a terceira nota</label> 
+        </div>
+      </fieldset>      
+     
+    </form>
+    <button id="calcular" onlclick="mediaAluno()"  >Calcular</button>  
+    <div id="resultado"></div>
+  </section>
+  <img src="./img/logo.png" alt="Imagem logo Softex">
+  
+</body>
+</html>

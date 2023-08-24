@@ -1,0 +1,45 @@
+{
+  "professor": [
+    {
+        "id": 1,
+        "nome": "Maria Aparecida",
+        "materia": "Infantil"
+    },
+    {
+        "id": 2,
+        "nome": "Wilson Ferreira",
+        "materia": "História"
+    }
+  ],
+  
+  "alunos": [
+    {
+      "id": 1,
+      "nome": "Bruno Silva",
+      "serie": "3º ano",
+      "nota": 9.3,
+      "aprovado": true
+    },
+    {
+      "id": 2,
+      "nome": "Maria Silva",
+      "serie": "3º ano",
+      "nota": 8,
+      "aprovado": true
+    },
+    {
+      "id": 3,
+      "nome": "Eduarda Silva",
+      "serie": "3º ano",
+      "nota": 3,
+      "aprovado": true
+    },
+    {
+      "id": 4,
+      "nome": "Simone Silva",
+      "serie": "3º ano",
+      "nota": 6,
+      "aprovado": true       
+    }
+  ]
+}

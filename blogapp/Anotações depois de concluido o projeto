@@ -1,0 +1,123 @@
+//Modulos
+Express:
+
+O Express é um framework utilizado em conjunto com o Node. js. Ele possui características que facilitam o desenvolvimento de nossas aplicações web e APIs, como um sistema de rotas completo, tratamento de exceções, gerenciamento de requisições HTTP e muito mais.
+
+Instalação: npm i express --save
+
+const express = require('express')
+const app = express()
+
+app.get('/', function (req, res) {
+  res.send('Hello World')
+})
+
+app.listen(3000)
+
+==================================
+Express-handlebars
+
+Handlebars é um processador de templates que gera a tua página HTML dinamicamente, poupando-te o tempo de fazeres atualizações manuais.
+
+Instalação: npm i express-handlebars --save
+
+Basic Usage
+
+Directory Structure:
+
+.
+├── app.js
+└── views
+    ├── home.handlebars
+    └── layouts
+        └── main.handlebars
+
+//Configuração do handlebars
+app.engine( "handlebars", handlebars.engine({defaultLayout:"main",  runtimeOptions: {
+  allowProtoPropertiesByDefault: true,
+  allowProtoMethodsByDefault: true},}));
+
+app.set('view engine', 'handlebars');
+
+==================================
+Body-parser
+
+O bodyParser serve para trabalhar com os dados vindo do seu cliente. Quando o cliente manda dados via form payload, esse pacote ele formata e transforma os dados para o formato de objeto javascript e joga tudo isso em um objeto dentro do objeto de requisição (req): req
+
+Instação: npm i body-parser --save
+
+//configuração do body parser
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+
+==================================
+Mongoose
+
+Mongoose é um biblioteca de Modelagem de Dados de Objeto (ou ODM, do inglês: Object Data Modeling) para MongoDB e Node. js. Ele gerencia o relacionamento entre dados, fornece a validação de esquemas e é usado como tradutor entre objetos no código e a representação desses objetos no MongoDB.
+
+Instalação: npm i mongoose --save
+
+//Configuração do Mongoose
+mongoose.Promise = global.Promise;
+mongoose.connect(db.mongoURI).then(()=>{
+  console.log("Conectado ao mongodb");
+}).catch((erro)=>{
+  console.log("Erro ao se conectar ao banco: " + erro);
+});
+
+//Criação do Model
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+
+const Usuario = new Schema({
+    nome: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true
+    },
+    eAdmin:{
+        type: Number,
+        default: 0
+    },
+    senha: {
+        type: String,
+        required: true
+    }
+})
+mongoose.model("usuarios", Usuario);
+ 
+==================================
+Express-session
+O middleware express-session armazena os dados da sessão no servidor; ele salva apenas o ID da sessão no cookie, não os dados da sessão. Por padrão, ele usa armazenamento em memória e não é projetado para um ambiente de produção.
+
+Instalação: npm i express-session --save
+
+//Session
+app.use(session({
+    secret: "cursodenode", //chave que gera uma session
+    resave: true,
+    saveUninitialized: true
+}))
+
+
+==================================
+Flash
+O módulo Connect-flash para Node. js permite que os desenvolvedores enviem uma mensagem sempre que um usuário estiver redirecionando para uma página da web especificada. Por exemplo, sempre que um usuário logou com sucesso em sua conta, uma mensagem pisca (exibida) indicando seu sucesso na autenticação.
+
+Instalação: npm i connect-flash --save
+
+app.use(flash())
+==================================
+Passport
+
+Js muito bacana e fácil de trabalhar com autenticação de usuários, e ele é chamado de Passport. Passport é um framework extremamente flexível e modular. Ele permite que você trabalhe com as principais estratégias de autenticação, que são: Basic & Digest, 
+
+Instalação: npm i passport --save
+            npm install --save passport passport-local
+
+//Passport
+app.use(passport.initialize())
+app.use(passport.session())

@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;  
+}
+body{
+  background: #fffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+}
+.calculadora{
+  width: 400px;
+  padding: .5rem;
+  background-color: #c4c4c4;
+  color: #000;
+  flex-direction: column;
+}
+h3{
+  font-size: 0.8rem;
+  font-family: 300;
+  color: #665;
+}
+
+#operacoes{
+  text-align: right;
+}
+
+#resultado{
+  min-height: 1.6em;
+  font-size: 3em;
+  font-weight: 700;
+  padding: 0.2em;
+  overflow-wrap: break-word;
+}
+#operacao{
+  color: #777;
+  padding: 0.2em;
+  overflow-wrap: break-word;
+  min-height: 1.6em; font-size: 3em;
+}
+
+#container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3px;
+}
+
+#container button{
+  border: 1px solid transparent;
+  border-radius: 0;
+  height: 4rem;
+  font-size: 1.2em;
+  background-color: #dbdbdb;
+  cursor: pointer;  
+}
+
+#container button:hover{
+  background-color: #bababa;
+  border-color: #999;
+}
+
+#container .numero{
+  background-color:#f3f3f3;
+  font-weight: 600;
+}
+
+#container #igual{
+  grid-column: span 2;
+  background-color: #75a5cb;
+}
+
+#container #igual:hover{
+  background-color: rgb(171, 29, 29);
+}
+
+img{
+  width: 400px;
+  height: 200px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;  
+}

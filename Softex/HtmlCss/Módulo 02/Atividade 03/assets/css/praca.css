@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&family=Ubuntu:wght@400;700&display=swap');
+/* font-family: 'Ubuntu', sans-serif;
+font-family: 'Oregano', cursive; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;   
+    flex: 1 1 100vw;
+    font-family: 'Ubuntu', sans-serif;  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+header, main, aside, footer{
+    display: flex;
+    margin: 3px;     
+}
+header{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;       
+    background-image: url(/assets/img/backgroud.svg);
+}
+.top{
+    display: flex;
+    flex: 1 1 100vw;  
+    height: 50px;
+    justify-content:flex-end;   
+    padding: 0 20px;
+    border-bottom: outset 5px rgba(1, 1, 1, 0.1);
+    background: rgba(0, 0, 0, 0.5);
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+.item a{    
+    text-decoration: none;    
+    padding: 0 10px;      
+    font-size: 32px;    
+    color: rgba(255, 255, 255, 0.5);       
+} 
+.item a:hover{
+    color: rgb(255, 255, 255); 
+}   
+.hero{
+    display: flex;
+    flex: 1 1 100vw;
+    height: 250px;     
+    
+}
+.logo{
+    display: flex;
+    flex: 1 1 100vw;
+    width: 100%;
+    height: 100%;    
+    justify-content:center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+     
+}
+.logo img{       
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+}
+.logo img:hover{
+  opacity: 0.8;
+}   
+.logo h1{
+    border-top: solid 5px rgba(0, 0, 0, 0.4);
+    border-bottom: solid 5px rgba(0, 0, 0, 0.4);
+    font-size: 42pt;
+    font-weight: 900;
+    background: rgba(0, 0, 0, 0.2);
+    color: #f0f0f0;
+    text-shadow: 5px 1px rgb(0, 0, 0);
+}
+.down{
+    flex: 1 1 100vw;  
+    display: flex;   
+    width: 100%;
+    height: 50px;
+    border-top: outset 5px rgba(1, 1, 1, 0.1);
+    background: rgba(0, 0, 0, 0.5); 
+}
+.logoRecife{
+  margin: 0 auto;
+}
+.logoRecife img{  
+    opacity: 0.8;     
+    width: 150px;
+    height: 40px;
+}
+.logoRecife img:hover{
+    opacity: 1; 
+}  
+aside{
+    flex: 1 1 100vw;    
+    display: flex;
+    padding: 1%;
+    width: 100%;    
+}
+figure img{        
+    width: 100%;     
+}
+figcaption{
+    background: rgba(0, 0, 0, 0.89);
+    color: white;  
+    width: 100%;
+    height: 50px;   
+    padding: 1%;  
+}
+main{          
+    flex-direction: column;  
+    justify-content:space-around;  
+    align-items: center;
+    margin: 3px;
+    padding: 1%;
+    height: 300px;
+    
+}
+menu .conteudo{
+    flex: 1  1 100vw;
+}
+
+main h3{
+    padding: 5px 10px;
+}
+
+main p{
+    padding: 5px 10px;
+    text-decoration: justify;
+    text-align: justify;
+}
+
+
+menu .home{
+    flex: 1 1 100vw;
+    width: 100%;
+    text-align: center; 
+    font-size: 64px;   
+    color: black;
+    text-decoration: none;
+}
+
+ 
+footer{
+    flex: 1 1 100vw;    
+    height: 300px;
+    padding: 1%;
+    background: rgba(0, 0, 0, 0.89);
+} 
+footer .right{    
+    flex: 1 1 100vw; 
+    display: flex;     
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+footer .midias{
+   display: flex;
+   width: 50%;
+   justify-content: space-around; 
+   align-items: flex-end;
+   margin-bottom: 80px;   
+}  
+footer img{
+    width: 300px;
+    height: auto;
+}
+    
+ 
+
+
+
+ 

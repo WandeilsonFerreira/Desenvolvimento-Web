@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Cauã Lucca | Wandeilson Ferreira">
+  <meta name="description" content="Quarta atividade do curso front-end - Softex PE">
+  <link rel="stylesheet" href="style.css"> 
+  <title>Softex - Atividade 04</title>
+</head>
+<body>
+  <div class="container">
+    <div class="hero-text padd-15"><h2>Softex - Atividade 04</h2>
+    <h3>Elabore um algoritmo que representa um cadastro. Ele deve ler os seguintes dados fornecidos pelo usuário:</h3>
+    <ul>      
+        <li>Nome</li>
+        <li>Endereço</li>
+        <li>Cidade</li>
+        <li>CPF</li>
+        <li>RG</li>
+        <li>Idade</li>
+        <li>Nome do pai</li>
+        <li>Nome da mãe</li>
+        <li>Peso</li>
+        <li>Renda bruta</li>       
+    </ul>
+    <h3>Apresente as informações solicitadas no final do cadastro.</h3>
+    
+    </div>
+    <div class="hero-input padd-15">
+      <h3>Dados de entrada</h3>
+      <fieldset form="" name="inputs-contact"> 
+        <legend>Usuário</legend>
+        <input type="text" id="nome" required placeholder="Digite o seu nome"><br>
+        <input type="text" id="endereço" placeholder="Informe o endereço"><br>
+        <input type="text" id="cidade" placeholder="Qual sua cidade?"><br>
+        <input type="text" id="cpf" placeholder="Digite os números do seu CPF"><br>
+        <input type="number" id="rg" placeholder="Digite os números do seu RG"><br>
+        <input type="number" id="idade" placeholder="Informe sua idade"><br>
+        <input type="text" id="pai" placeholder="Qual o nome do pai?"><br>
+        <input type="text" id="mae" placeholder="Qual o nome da mãe?"><br>
+        <input type="number" id="peso" placeholder="Inform seu peso"><br>
+        <input type="number" id="renda" placeholder="Qual sua renda?"><br>
+        <button onclick="enviar()">Enviar</button>
+      </fieldset>
+
+    </div>
+    <div class="hero-result padd-15">
+      <h3>Saída</h3>
+      <p id="resultado"></p>
+      
+    </div>
+  </div>
+  <script src="scrypt.js"></script>
+</body>
+</html>

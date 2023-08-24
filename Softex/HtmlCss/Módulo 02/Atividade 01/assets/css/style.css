@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&family=Ubuntu:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+#imagemTopo{
+    display: flex;
+    flex: 1 1 100vw;   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image:url(/assets/img/Novo\ Projeto.png);
+    width: 100%;
+    height: 300px;   
+    color: rgba(255, 255, 255, 0.986);    
+    font-family: 'Oregano', cursive;
+    font-weight: bold;
+    font-size: 75px;    
+        
+}
+.retangulo{
+    background: black;
+    /* width: 80%;
+    height: 80%; */
+    left: 50px;
+    top: 10px;
+    z-index: 1;
+    
+}
+.botao{
+    /* background: white; */
+    padding: 5px 50px;
+    color: white;
+    border-radius: 50px;    
+    width: auto;   
+    font-size:25px;
+    text-decoration: none;
+    border: 2px solid ;
+}
+.botao:hover{
+    background: rgba(143,111,69,255);
+    color: black;
+    opacity: 0.7;
+}
+#imagemTopo img{
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+}
+body{
+    max-width: 1400px;    
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;   
+    flex: 1 1 100vw;    
+    font-family: 'Ubuntu', sans-serif;
+}
+header, main, footer{
+    display: flex;
+    margin: 3px;
+     
+}
+header{
+    height: 50px;
+    width: 100%;   
+    position: sticky;
+    top: 0;
+    background: white;
+    padding-top: 5px;
+}
+.navegacao{      
+    background: #40525a;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;      
+}
+#logo{
+    flex: 0 1 20vw; 
+    padding-left: 2%;        
+}
+#logo img{
+    width: 30px;
+   
+}
+#menu{
+    display: flex;
+    flex: 1 1 80vw;
+    align-items: center;
+    justify-content: space-around;  
+     
+}
+#menu a{
+    margin: 3px;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;    
+    color: inherit;
+}
+#menu a:hover{
+    border-bottom: 2px solid rgba(143,111,69,255);
+    opacity: 0.8;
+}
+#openMenu, #classMenu{
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+    display: none;
+}
+h1{
+    margin-bottom: 25px;
+}
+main{
+    flex: 1 1 100vw;
+    height: auto;
+    flex-direction:column;
+    text-align: justify;
+    padding: 5%;   
+}
+p{
+    padding-top: 20px;
+}
+.cards{      
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 100px;
+       
+} 
+.card{
+    width: 300px;
+    height: 500px;    
+    box-shadow: 5px 5px 10px;   
+    margin: 10px auto;    
+    text-align: center;
+}
+.card h3{      
+    padding-top: 5px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: 'Oregano', cursive;
+}
+.card img{    
+    width: 95%;
+    height: 300px;
+    padding: 10px;
+}
+.card p{         
+    padding: 5px 10px;
+    text-decoration: justify;
+}
+.botao2{
+    background: #40525a;
+    padding: 5px 50px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 50px;    
+    width: auto;   
+    font-size:15px;
+    text-decoration: none;
+    border: 2px solid ;
+}
+.botao2:hover{
+    background: rgb(54, 54, 63);
+}
+footer{
+    display: flex;
+    flex: 1 1 100vw;
+    height: auto;
+    background-color: #40525a;
+    padding: 10px;
+}
+footer .direita{
+    flex: 1 1 50vw;     
+    width: 100%;    
+}
+footer .esquerda{
+    flex: 1 1 50vw;  
+    color: white;  
+    width: 100%;
+    padding-top: 300px;
+    text-align:end;
+    
+    
+
+}

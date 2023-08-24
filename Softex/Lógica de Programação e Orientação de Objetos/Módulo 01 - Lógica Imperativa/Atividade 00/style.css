@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;  
+}
+body{
+  max-width: 1440px;
+  background-color: rgb(190, 195, 199);
+  font-family: 'Oswald', sans-serif;
+}
+.container{
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: center;
+  align-items: center;  
+}
+.texto{
+  flex: 48%;
+  margin: 2%;
+  /* background-color: rgb(234, 244, 244);   */
+}
+
+.tangram{  
+  flex: 48%;
+  margin: 2%;
+  position: relative;   
+  margin: 25px ;
+  width: 400px;
+  height: 550px;
+  background: rgb(172, 154, 154);  
+  box-shadow: rgb(20, 20, 20) 4px 4px 20px 0px;
+}
+.tmaior1{ 
+  clip-path: polygon(50% 50%, 0 0, 0 100%);
+  position: absolute;   
+  background: red;
+  width: 100%;
+  height: 100%;  
+  border:rgb(0, 5, 9) solid red;
+}
+.tmaior2{ 
+  position: absolute; 
+  clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+  background: rgb(6, 108, 210);
+  width: 100%;
+  height: 100%;
+}
+.tpequeno1{
+  position: absolute; 
+  clip-path: polygon(50% 50%, 75% 75%, 75% 25%);
+  background: rgb(251, 231, 10);
+  width: 100%;
+  height: 100%;
+}
+.quadrado{
+  position: absolute; 
+  clip-path: polygon(25% 25%, 50% 0%, 75% 25%, 50% 50%);
+  background: rgb(4, 3, 0);
+  width: 100%;
+  height: 100%;
+}
+.tpequeno2{
+  position: absolute; 
+  clip-path: polygon(0 0, 25% 25%, 50% 0);
+  background: rgb(15, 7, 125);
+  width: 100%;
+  height: 100%;
+}
+.tmedio{
+  position: absolute; 
+  clip-path: polygon(50% 0%, 100% 0%, 100% 50%);
+  background: rgb(16, 234, 34);
+  width: 100%;
+  height: 100%;
+}
+
+.paralelogramo{
+  position: absolute; 
+  clip-path: polygon(75% 75%, 75% 25%, 100% 50%, 100% 100%);
+  background: rgb(231, 11, 183);
+  width: 100%;
+  height: 100%;
+
+  
+}

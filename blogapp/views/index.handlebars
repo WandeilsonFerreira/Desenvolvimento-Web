@@ -1,0 +1,49 @@
+<div class="jumbotron">
+  <h1 class="display-4">Bem-vindo ao BlogApp!</h1>
+  <p class="lead">O projeto <strong> BlogApp </strong> trata-se de um sistema de gestao de conteúdo para blogs criado exclusivamente de forma didatica. 
+    O projeto foi desenvolvido em Node.JS tendo como base as aulas do professor Victor Lima - <a href="https://guiadoprogramador.com/curso/formacao-node-js/ ">Guia do Programador.</a> 
+    Divesas tech skills foram utilizadas na constução do sistema, destacando-se: NodeJs, Bootstrap, MongoDB, Git/Github entre outtras.</p>
+
+Projeto disponível em: <a href="https://github.com/WandeilsonFerreira/blogapp">BlogApp</a> 
+  <hr class="mt-4">
+  <p>Cadastre - se para acessar o conteúdo</p>
+  <a class="btn btn-primary btn-lg" href="/usuarios/registro" role="button">Crie uma conta</a>
+</div>
+<br>
+<hr> 
+ <div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <a href="https://nodejs.org/en/"><img style="width:100px; height: 100px" src="img/node.png" class="rounded float-start" alt="NodeJs"></a>
+    </div>
+    <div class="col">
+      <a href="https://getbootstrap.com/"><img style="width:100px; height: 100px" src="img/bootstrap.png" class="rounded float-start" alt="Bootstrap"></a>
+    </div>
+    <div class="col">
+      <a href="https://github.com/"><img style="width:75px; height: 75px" src="img/github.png" class="rounded float-start" alt="Github"></a>
+    </div>
+    <div class="col">
+      <a href="https://www.mongodb.com"><img style="width:100px; height: 100px" src="img/mongo.png" class="rounded float-start" alt="MongoDb"></a>
+    </div>
+    <div class="col">
+      <a href="https://id.heroku.com/login"><img style="width:100px; height: 100px" src="img/heroku.png" class="rounded float-start" alt="Heroku"></a> 
+    </div>
+  </div>
+</div> 
+ 
+<hr>
+<h3>Postagens recentes: </h3>
+{{#each postagens}}
+<div class="card mt-2">
+    <div class="card-body">
+        <h3>{{titulo}}</h3>
+        <p>{{descricao}}</p>
+        <a href="/postagem/{{slug}}"><button class="btn btn-success btn-sm">Leia mais</button></a>
+        <hr>
+        <small>Categoria: <strong>{{categoria.nome}}</strong></small><br>
+        <small>Data de criação: {{data}}</small>
+    </div>
+</div>
+{{else}}
+    <h5>Nenhuma postagem</h5>
+{{/each}} 

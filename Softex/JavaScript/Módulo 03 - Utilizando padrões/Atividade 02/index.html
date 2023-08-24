@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/scripts.js" defer></script>
+  <title>Calculadora</title>
+</head>
+<body>
+  <div class="calculadora">
+    <h3>Calculadora</h3>
+      <div id="operacoes">
+        <div id="resultado"></div>
+        <div id="operacao"></div>
+      </div>
+      <div id="container">
+        <button id="botao" onclick="limpar()">C</button>
+        <button id="botao" onclick="limparTudo()" >CE</button>
+        <button id="botao" onclick="limparUltimo()">DEL</button>
+        <button id="botao" onclick="inserir('/')" >/</button>
+        <button class="numero" onclick="inserir('7')" id="botao">7</button>
+        <button class="numero" onclick="inserir('8')" id="botao">8</button>
+        <button class="numero" onclick="inserir('9')" id="botao">9</button>
+        <button id="botao"onclick="inserir('*')">*</button>
+        <button class="numero" onclick="inserir('4')" id="botao">4</button>
+        <button class="numero" onclick="inserir('5')" id="botao">5</button>
+        <button class="numero" onclick="inserir('6')" id="botao">6</button>
+        <button id="botao" onclick="inserir('-')">-</button>
+        <button class="numero" onclick="inserir('1')" id="botao">1</button>
+        <button class="numero" onclick="inserir('2')" id="botao">2</button>
+        <button class="numero" onclick="inserir('3')" id="botao">3</button>
+        <button id="botao" onclick="inserir('+')">+</button>
+        <button class="numero" onclick="inserir('0')" id="botao">0</button>
+        <button id="botao" onclick="inserir('.')">.</button>
+        <button id="igual" onclick="calcular()">=</button>
+
+      </div>
+  </div>
+    <img src="img/logo.png" alt="">  
+</body>
+</html>
