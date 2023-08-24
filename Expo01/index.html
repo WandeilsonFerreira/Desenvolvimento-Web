@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/assets/img/faveicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/script.js" defer></script>
+  <title>Distância | Segurança</title>
+</head>
+<body>
+  <main>
+    <section>    
+      <form action="post">
+        <h1>Distância de segurança</h1>          
+        <fieldset>
+          <div class="container">
+            <input type="number" step="0.1" id="qtdExplosivo" required name="qtdExplosivo" autofocus>
+            <label>Informe o peso total do explosivo</label> 
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="container">
+            <input type="number" step="1"  id="qtdGramatura" required name="qtdGramatura" autofocus>
+            <label>Informe a gramatura </label> 
+          </div>
+        </fieldset>    
+
+
+        <fieldset>
+          <div class="container">    
+            <select name="fatoRelatividade" id="fatoRelatividade">            
+              <option value="">...</option>
+              <option value="0.38">0.38 ENCARTUCHADO DE EMULSÃO </option>
+              <option value="0.42">0.42 NITRATO DE AMÔNIA </option>
+              <option value="0.55">0.55 POLVORA NEGRA</option>
+              <option value="0.92">0.92 DINAMITE MILITAR</option>
+              <option value="1">TNT</option>
+              <option value="1.19">1.19 PLASTEX</option>
+              <option value="1.34">1.34 C-4 (RDX)</option>
+              <option value="1.66" selected>1.66 PETN</option>
+              <option value="1.66">1.66 TUBO DE CHOQUE COM ESPOLETA</option>
+              <option value="1.68">1.68 DEMEX</option>
+            </select>                   
+          </div>
+        </fieldset>   
+
+        <h1>Pressão Interna</h1>
+
+        <fieldset>
+          <div class="container">
+            <input type="number" step="0.1"  value="3" id="largura" required name="largura" autofocus>
+            <label>Informe a largura do cômodo: </label> 
+          </div>
+        </fieldset>  
+        
+        <fieldset>
+          <div class="container">
+            <input type="number" step="0.1"  value="2.8" id="altura" required name="altura" autofocus>
+            <label>Informe a altura cômodo: </label> 
+          </div>
+        </fieldset>   
+
+        <fieldset>
+          <div class="container">
+            <input type="number" step="0.1"  value="3" id="profundidade" required name="profundidade" autofocus>
+            <label>Informe a profundidade cômodo: </label> 
+          </div>
+        </fieldset>   
+      </form>
+
+      <button id="calcular" onclick="calculoDistancia()">Calcular</button>  
+      <div id="resultado"></div>    
+      <div id="psi"></div>
+      
+      <img src="/assets/img/logo.png" alt="Brasão explosivistas PMPB">   
+    </section>   
+  </main>
+ 
+
+</body>
+</html>
